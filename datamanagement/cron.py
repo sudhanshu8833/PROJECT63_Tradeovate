@@ -9,6 +9,5 @@ error = logging.getLogger('error_log')
 
 
 def my_scheduled_job():
-    print("Hello its working, my friend")
     logger.info("we have started logging... hurray!!")
 

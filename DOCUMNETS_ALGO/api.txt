@@ -1,7 +1,32 @@
 API key:
 cid: 2493, secret: 84226cf9-a8ed-41f9-999f-c44b8afa99ed
+username: jonasberes
+password: aDamko695
+
+
+#LOGIN
+username - jonas_beres
+password - tradeovate123
+
+#DJANGO ADMIN
+username - jonas
+password - jonas123
+
+#Digitalocean
+email - jojoman.beres@gmail.com
+password - aDamko{}
+
+#servers
+157.245.112.113
+246Madhya
+ssh root@157.245.112.113
+rsync -av --exclude='env/' --exclude='git/' --exclude='log/' /Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/* root@157.245.112.113:/root/PROJECT/
 
 
 
 
+#STEPS
 
+1. Test the Authentication, Data fetch and Order execution
+2. see if the program is running for the whole time, it is supposed
+3. Now test the signals, If they are generating at the correct time (CHARTS might be a great addition for this)

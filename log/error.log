@@ -1,0 +1,362 @@
+INFO 2024-02-01 05:09:41,896 wrappers 78084 6240792576 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 97, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 05:09:41,896 wrappers 78084 6240792576 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 97, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 05:09:41,897 wrappers 78084 6240792576 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 97, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:18:03,043 wrappers 78214 6238613504 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 98, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:18:03,044 wrappers 78214 6238613504 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 98, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:18:03,045 wrappers 78214 6238613504 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 98, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:04,291 wrappers 78310 6234271744 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:04,292 wrappers 78310 6234271744 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:04,292 wrappers 78310 6234271744 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:21,772 wrappers 78358 6234632192 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:21,772 wrappers 78358 6234632192 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:24:21,772 wrappers 78358 6234632192 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    url=self.base_url+"v1/auth/accesstokenrequest"
+        ^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:28:53,072 wrappers 78400 6276165632 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    def login(self):
+            ^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:28:53,073 wrappers 78400 6276165632 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    def login(self):
+            ^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:28:53,073 wrappers 78400 6276165632 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 99, in login
+    def login(self):
+            ^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'base_url'
+
+INFO 2024-02-01 06:31:47,042 wrappers 78626 6244954112 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.username,
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:31:47,043 wrappers 78626 6244954112 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.username,
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:31:47,043 wrappers 78626 6244954112 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.username,
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:32:18,502 wrappers 78694 6278295552 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.[username],
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:32:18,502 wrappers 78694 6278295552 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.[username],
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:32:18,502 wrappers 78694 6278295552 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin.[username],
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'username'
+
+INFO 2024-02-01 06:32:27,745 wrappers 78703 6267695104 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:32:27,745 wrappers 78703 6267695104 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:32:27,745 wrappers 78703 6267695104 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:35:24,015 wrappers 78822 6276214784 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:35:24,015 wrappers 78822 6276214784 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:35:24,016 wrappers 78822 6276214784 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/wrappers.py", line 32, in newfn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 108, in login
+    "name": self.admin['username'],
+            ~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+
+INFO 2024-02-01 06:58:52,875 strategy 79185 6195769344 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 279, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 262, in main
+    price=df['Close'].iloc[-1]
+          ~~~~~~~~~~~~~~~~^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/env/lib/python3.11/site-packages/pandas/core/indexing.py", line 1153, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/env/lib/python3.11/site-packages/pandas/core/indexing.py", line 1714, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/env/lib/python3.11/site-packages/pandas/core/indexing.py", line 1647, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+INFO 2024-02-01 08:32:07,604 strategy 79264 6202159104 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 279, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 263, in main
+    high=self.admin['breakout_lines'][ticker]['high']
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+INFO 2024-02-01 08:45:44,282 strategy 79568 6204125184 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 280, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 254, in main
+    signal=self.signals(ticker,df)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 212, in signals
+    buy_signal=self.buy_signal(instrument,df)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 135, in buy_signal
+    high=self.admin['breakout_lines'][instrument]['high']
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+INFO 2024-02-01 08:47:18,763 strategy 79586 6232993792 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 280, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 254, in main
+    signal=self.signals(ticker,df)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 212, in signals
+    buy_signal=self.buy_signal(instrument,df)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 167, in buy_signal
+    self.create_order(params)
+TypeError: run_strategy.create_order() takes 1 positional argument but 2 were given
+
+INFO 2024-02-01 08:58:35,405 strategy 79606 6236237824 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 280, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 254, in main
+    signal=self.signals(ticker,df)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 212, in signals
+    buy_signal=self.buy_signal(instrument,df)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 167, in buy_signal
+    self.create_order(params)
+TypeError: run_strategy.create_order() takes 1 positional argument but 2 were given
+
+INFO 2024-02-01 09:21:04,124 strategy 80382 6278410240 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 289, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 266, in main
+    self.add_positions(ticker,signal)
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'add_positions'
+
+INFO 2024-02-01 09:24:09,911 strategy 80469 6234697728 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 289, in run
+    # if(time_now.hour>=4 and time_now.minute>=0):
+    ^^^^^^^^^^^
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 266, in main
+    elif(signal=="sell"):
+        ^^^^^^^^^^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'add_positions'
+
+INFO 2024-02-01 09:31:33,478 strategy 80578 6273429504 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 287, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 280, in main
+    self.close_signal()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 236, in close_signal
+    pos['current_price']=self.prices[pos['symbol']]
+                         ~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'MNQ'
+
+INFO 2024-02-01 10:54:33,458 strategy 80966 6242480128 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 291, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 284, in main
+    self.close_signal()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 243, in close_signal
+    if(pos['current_price']>=pos['takeprofit'] or pos['current_price']<=pos['stoploss']):
+                             ~~~^^^^^^^^^^^^^^
+KeyError: 'takeprofit'
+
+INFO 2024-02-01 10:55:40,451 strategy 81041 6240006144 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 291, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 284, in main
+    self.close_signal()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 244, in close_signal
+    self.close_position()
+TypeError: run_strategy.close_position() missing 2 required positional arguments: 'instrument' and 'type'
+
+INFO 2024-02-01 11:06:19,178 strategy 81220 6278311936 Traceback (most recent call last):
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 291, in run
+    self.main()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 284, in main
+    self.close_signal()
+  File "/Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT63_tradeovate/datamanagement/helpful_scripts/strategy.py", line 246, in close_signal
+    self.poss[pos['symbol']]=False
+    ^^^^^^^^^
+AttributeError: 'run_strategy' object has no attribute 'poss'
+

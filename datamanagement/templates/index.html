@@ -1,359 +1,250 @@
-﻿﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>
+﻿﻿<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="admin, dashboard">
-	<meta name="author" content="DexignZone">
-	<meta name="robots" content="index, follow">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Dompet : Payment Admin Template">
-	<meta property="og:title" content="Dompet : Payment Admin Template">
-	<meta property="og:description" content="Dompet : Payment Admin Template">
-	<meta property="og:image" content="https://dompet.dexignlab.com/xhtml/social-image.png">
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- PAGE TITLE HERE -->
-	<title>Algo99</title>
-	{% load static %}
-	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <!-- Custom Stylesheet -->
-	<link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+{% load static %}
+<div class="container-lg">
+  <form action="/start_strategy/" method="post">
+    {% csrf_token %}
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tradeovate BOT</a>
+      
 
-</head>
+      {% if admin.status %}
+      <div class="form-check form-switch" style="padding-left: 60px;">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" name="status" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Status</label>
+      </div>
+      {% else %}
+      <div class="form-check form-switch" style="padding-left: 60px;">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="status">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Status</label>
+      </div>
+      {% endif %}
 
-<body>
+      {% if admin.live %}
+      <div class="form-check form-switch" style="padding-left: 60px;">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" name="live" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Live</label>
+      </div>
+      {% else %}
+      <div class="form-check form-switch" style="padding-left: 60px;">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="live">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Live</label>
+      </div>
+      {% endif %}
 
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="waviy">
-		   <span style="--i:1">L</span>
-		   <span style="--i:2">o</span>
-		   <span style="--i:3">a</span>
-		   <span style="--i:4">d</span>
-		   <span style="--i:5">i</span>
-		   <span style="--i:6">n</span>
-		   <span style="--i:7">g</span>
-		   <span style="--i:8">.</span>
-		   <span style="--i:9">.</span>
-		   <span style="--i:10">.</span>
-		</div>
+
+      <div class="w-10 p-3 text-center">
+        <a href="/handleLogout" class="btn btn-primary">Logout</a>
+      </div>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        </ul>
+      </div>
     </div>
-    <!--*******************
-        Preloader end
-    ********************-->
+  </nav>
+
+  <div class="position-relative p-3">
 
 
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
-    <div id="main-wrapper">
+    <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="name" value="{{ admin.name }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-        <!--**********************************
-            Nav header start
-        ***********************************-->
-       <div class="nav-header">
-            <a href="index.html" class="brand-logo">
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="password" value="{{ admin.password }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-            </a>
-            <div class="nav-control">
-                <div class="hamburger">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
-                </div>
-            </div>
-        </div>
-        <!--**********************************
-            Nav header end
-        ***********************************-->
-		
-		<!--**********************************
-            Chat box start
-        ***********************************-->
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">client_id</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="client_id" value="{{ admin.client_id }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-		<!--**********************************
-            Chat box End
-        ***********************************-->
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Secret key</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="secret_key" value="{{ admin.secret_key }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">breakout tolerance</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="breakout_tolerance" value="{{ admin.breakout_tolerance }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-		
-		
-        <!--**********************************
-            Header start
-        ***********************************-->
-   
-                    
-        <!--**********************************
-            Header end ti-comment-alt
-        ***********************************-->
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">wick tolerance</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="wick_tolerance" value="{{ admin.wick_tolerance }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-        <!--**********************************
-            Sidebar start
-        ***********************************-->
-        <div class="dlabnav">
-          <div class="dlabnav-scroll">
-            <ul class="metismenu" id="menu">
-              <li class="dropdown header-profile">
-                <a
-                  class="nav-link"
-                  href="javascript:void(0);"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  <div class="header-info ms-3">
-                    <span class="font-w600">Hi,<b>{{ myuser.username }}</b></span>
-                    <small class="text-end font-w400">{{ myuser.email }}</small>
-                  </div>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <a href="/handleLogout" class="dropdown-item ai-icon">
-                    <svg
-                      id="icon-logout"
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="text-danger"
-                      width="18"
-                      height="18"
-                      viewbox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                      <polyline points="16 17 21 12 16 7"></polyline>
-                      <line x1="21" y1="12" x2="9" y2="12"></line>
-                    </svg>
-                    <span class="ms-2">Logout </span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <a href="/data/index" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-025-dashboard"></i>
-                  <span class="nav-text mm-show">Dashboard</span>
-                </a>
-              </li>
-              <!-- <li>
-                <a href="/all_bots" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-040-graph"></i>
-                  <span class="nav-text">Upgrade bots</span>
-                </a>
-              </li> -->
-              <!-- <li>
-                <a href="/bots" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-013-checkmark"></i>
-                  <span class="nav-text">bots</span>
-                </a>
-              </li> -->
-  
-  
-              <li>
-                <a href="/data/position" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-381-key"></i>
-                  <span class="nav-text">Orders</span>
-                </a>
-              </li>
-  
-              <li>
-                <a href="/data/position" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-381-notepad"></i>
-                  <span class="nav-text">Present Position</span>
-                </a>
-              </li>
-  
-              <li>
-                <a href="/data/handleLogout" class="ai-icon" aria-expanded="false">
-                  <i class="flaticon-381-compass-1"></i>
-                  <span class="nav-text">Logout</span>
-                </a>
-              </li>
-            </ul>
-            <div class="copyright">
-              <p>
-                <strong>Portfolio Admin Dashboard</strong> © 2022 All Rights Reserved
-              </p>
-              <p class="fs-12">Made with <span class="heart"></span> by Algo99</p>
-            </div>
-          </div>
-        </div>
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">risk per trade</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="risk_per_trade" value="{{ admin.risk_per_trade }}" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">max candle</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="max_candle_body_size" value="{{ admin.max_candle_body_size }}" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Historical candles</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="stop_loss_historical_candles" value="{{ admin.stop_loss_historical_candles }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
 
-        <div class="content-body" style="padding: 0px;">
-          <div class="container-fluid" style="padding: 10%;">
-					<div class="col-xl-6 col-lg-12" style="width: 100%; height: 1000px;">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Start Details</h4>
-                            </div>
-                            <div class="card-body" >
-                                <div class="basic-form" >
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">wg room</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="stop_loss_wg_room" value="{{ admin.stop_loss_wg_room }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-                                  <div class="col-sm-10">
-                                    <button class="btn btn-primary" onclick="url_call('/data/data_calculation')">data calculation</button>
-                                  </div>
+      <!-- <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">Symbols</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="symbols" value="{{ admin.symbols }}" aria-describedby="inputGroup-sizing-default">
+      </div> -->
 
-                                    <form action="/data/start_strategy/" method="post">
-                                      {% csrf_token %}
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">Buy Factor</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" class="form-control" placeholder="BuyFactor" value="300" name="buy_factor">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-3 col-form-label">percentage premium</label>
-                                            <div class="col-sm-9">
-                                                <input type="number" step="0.01" class="form-control" placeholder="premium" value="0.99" name="per_premium">
-                                            </div>
-                                        </div>
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">MNQ breakout lines</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="MNQ_breakout_lines" value="{{ admin.breakout_lines.MNQ }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-                                        <div class="mb-3 row">
-                                          <label class="col-sm-3 col-form-label">TP1</label>
-                                          <div class="col-sm-9">
-                                              <input type="number" class="form-control" placeholder="TP1" value="40" name="TP1">
-                                          </div>
-                                      </div>
+      <div class="input-group mb-3 px-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">MES breakout lines</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" name="MES_breakout_lines" value="{{ admin.breakout_lines.MES }}" aria-describedby="inputGroup-sizing-default">
+      </div>
 
-                                      <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">TP2</label>
-                                        <div class="col-sm-9">
-                                            <input type="number" class="form-control" placeholder="TP2" value="90" name="TP2">
-                                        </div>
-                                    </div>
+      <div class="input-group mb-3 px-3">
+        <label class="input-group-text" for="inputGroupSelect01">TimeFrame</label>
+        <select class="form-select" id="inputGroupSelect01" name="time_frame">
+          
+          {% if admin.time_frame == '5m' %}
+          <option selected value="5m" >5m</option>
+          <option value="15m">15m</option>
+          <option value="1h">1h</option>
+          <option value="1d">1d</option>
+          {% elif admin.time_frame == '15m' %}
+          <option value="5m" >5m</option>
+          <option selected value="15m">15m</option>
+          <option value="1h">1h</option>
+          <option value="1d">1d</option>
+          {% elif admin.time_frame == '1h' %}
+          <option value="5m" >5m</option>
+          <option value="15m">15m</option>
+          <option selected value="1h">1h</option>
+          <option value="1d">1d</option>
+          {% else %}
+          <option value="5m" >5m</option>
+          <option value="15m">15m</option>
+          <option value="1h">1h</option>
+          <option selected value="1d">1d</option>
+          {% endif %}
+        </select>
+      </div>
 
-                                    <div class="mb-3 row">
-                                      <label class="col-sm-3 col-form-label">time out</label>
-                                      <div class="col-sm-9">
-                                          <input type="number" class="form-control" placeholder="time out" value="60" name="timeout">
-                                      </div>
-                                  </div>
-
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">ET</label>
-                                    <div class="col-sm-9">
-                                        <input type="number" class="form-control" placeholder="et" value="50" name="et">
-                                    </div>
-                                </div>
-
-
-                                  <div class="mb-3 row">
-                                    <label class="col-sm-3 col-form-label">multiplier</label>
-                                    <div class="col-sm-9">
-                                        <input type="number" class="form-control" placeholder="multiplier" value="1" name="lot">
-                                    </div>
-                                </div>
-                                        <fieldset class="mb-3">
-                                            <div class="row">
-                                                <label class="col-form-label col-sm-3 pt-0">sell Factor</label>
-                                                <div class="col-sm-9">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="sell_factor" value="0" checked="">
-                                                        <label class="form-check-label">
-                                                            0
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="sell_factor" value="50">
-                                                        <label class="form-check-label">
-                                                            50
-                                                        </label>
-                                                    </div>
-              
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="radio" name="sell_factor" value="100">
-                                                      <label class="form-check-label">
-                                                          100
-                                                      </label>
-                                                  </div>
-
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-3">TYPE</div>
-                                            <div class="col-sm-9">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="type">
-                                                    <label class="form-check-label"  name="buy_factor">
-                                                        LIMIT
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <button type="submit" class="btn btn-primary">Start the strategy</button>
-                                            </div>
-
-
-
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-
-
-                </div>
-            </div>
-        </div>
-        <!--**********************************
-            Content body end
-        ***********************************-->
-
-
-        <!--**********************************
-            Footer start
-        ***********************************-->
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="https://www.algo99.com" target="_blank">Algo99</a> 2022</p>
-            </div>
-        </div>
-        <!--**********************************
-            Footer end
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button start
-        ***********************************-->
-
-        <!--**********************************
-           Support ticket button end
-        ***********************************-->
-
-        
+    <div class="w-100 p-3 text-center">
+      <button type="submit" class="btn btn-outline-success">Submit</button>
     </div>
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
 
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <script src="{% static 'vendor/global/global.min.js' %}"></script>
-	<script src="{% static 'vendor/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
-	
-  <script>
-    function url_call(url) {
-        window.open(url);
-        // $.get('YOUR_VIEW_HERE/'+pk+'/', function (data) {
-        //     alert("counter updated!");
-        // });
-    }
-</script>
 
-    <script src="{% static 'js/custom.min.js' %}"></script>
-	<script src="{% static 'js/dlabnav-init.js' %}"></script>
-	<script src="{% static 'js/demo.js' %}"></script>
-    <script src="{% static 'js/styleSwitcher.js' %}"></script>
+
+  </div>
+
+</form>
+
+<br><br>
+<h2 style="text-align: center; padding-bottom: 10px; ">Present positions</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">symbol</th>
+          <th scope="col">Time in</th>
+          <th scope="col">Price in</th>
+          <th scope="col">type</th>
+          <th scope="col">current</th>
+          <th scope="col">stoploss</th>
+          <th scope="col">takeproft</th>
+          <th scope="col">quantity</th>
+          <th scope="col">Pnl</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider" id="present_position_table">
+
+        {% for pos in present_positions %}
+        <tr>
+          <th scope="row">1</th>
+          <td>{{ pos.symbol }}</td>
+          <td>{{ pos.time_start }}</td>
+          <td>{{ pos.price_in }}</td>
+          <td>{{ pos.type }}</td>
+          <td>{{ pos.current_price }}</td>
+          <td>{{ pos.stoploss }}</td>
+          <td>{{ pos.take_profit }}</td>
+          <td>{{ pos.quantity }}</td>
+
+          <td style="background-color: rgb(21, 214, 21);">{{ pos.pnl }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  
+  </div>
+
+  <br><br><br><br><br><br>
+  <h2 style="text-align: center; padding-bottom: 10px; ">Closed Positions</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="table-light">
+          <tr>
+
+            <th scope="col">#</th>
+            <th scope="col">symbol</th>
+            <th scope="col">Time in</th>
+            <th scope="col">Price in</th>
+            <th scope="col">type</th>
+            <th scope="col">Timeout</th>
+            <th scope="col">Priceout</th>
+            <th scope="col">quantity</th>
+            <th scope="col">Pnl</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider" id="closed_position_table">
+
+          {% for pos in closed_positions %}
+          <tr>
+            <th scope="row">1</th>
+            <td>{{ pos.symbol }}</td>
+            <td>{{ pos.time_start }}</td>
+            <td>{{ pos.price_in }}</td>
+            <td>{{ pos.type }}</td>
+            <td>{{ pos.time_end }}</td>
+            <td>{{ pos.price_out }}</td>
+            <td>{{ pos.quantity }}</td>
+            <td style="color: rgb(216, 25, 25);">{{ pos.pnl }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    
+    </div>
+  
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+
 </body>
 </html>
